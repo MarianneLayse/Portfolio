@@ -141,7 +141,6 @@ header a:hover {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        padding: 10px;
     }
 
     header a {
@@ -158,7 +157,7 @@ header a:hover {
         text-indent: 0 !important;
         font-size: 16px;
         line-height: 1.6;
-        width: 100%;
+        word-spacing: normal;
     }
 
     .texto {
@@ -180,7 +179,7 @@ header a:hover {
     /* ===== PROJETOS ===== */
     .projetos {
         display: flex;
-        justify-content: space-between;
+        flex-wrap: wrap;
         gap: 10px;
     }
 
