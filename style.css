@@ -174,8 +174,9 @@ header a:hover{
         justify-content: center;
         flex-wrap: wrap;
         gap: 10px;
+        border: 2px solid red;
     }
-    
+
     .redes a{
     display: inline-block;
     }
