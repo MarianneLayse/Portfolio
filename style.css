@@ -134,21 +134,58 @@ header a:hover {
     color: #d9a7ff;
 }
 
-@media (max-width:520px){
-	header h1{font-size:1.6rem} /* título um pouco menor em telas pequenas */
-	section h2{font-size:1.15rem} /* título secundário menor */
-	.profile-link{max-width:140px} /* reduz a largura máxima dos cartões */
+@media (max-width: 768px) {
+
+    /* ===== MENU ===== */
+    header {
+        text-align: center;
+    }
+
+    header a {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        margin: 5px 0;
+    }
+
+    /* ===== INÍCIO (TEXTO + FOTO) ===== */
+    .inicio {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .texto {
+        width: 100%;
+    }
+
+    img {
+        width: 100%;
+        margin-top: 20px;
+        display: block;
+    }
+
+    /* ===== TEXTOS ===== */
+    p {
+        text-align: left;
+        text-indent: 0;
+        font-size: 16px;
+        line-height: 1.5;
+    }
+
+    h2 {
+        text-align: center;
+        font-size: 22px;
+    }
+
+    /* ===== PROJETOS ===== */
+    .projetos {
+        flex-direction: column;
+    }
+
+    .card {
+        width: 100%;
+    }
+
 }
-
-/* respect user preference */
-/* Respeita preferência do usuário por animações reduzidas */
-@media (prefers-reduced-motion: reduce){
-	.profile-link, .profile-link img{transition:none} /* remove transições se preferir menos movimento */
-}
-
-/* minor utility */
-.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0} /* utilitário para esconder visualmente mas manter acessível */
-    
-
 
 
