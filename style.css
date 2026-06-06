@@ -175,6 +175,10 @@ header a:hover{
         flex-wrap: wrap;
         gap: 10px;
     }
+    
+    .redes a{
+    display: inline-block;
+    }
 
     h2{
         text-align: center;
