@@ -134,57 +134,21 @@ header a:hover {
     color: #d9a7ff;
 }
 
-@media (max-width: 768px){
-
-    .projetos{
-        flex-direction: column;
-    }
-
-    .card{
-        width: 100%;
-    }
-
-    main{
-        padding: 10px;
-    }
-
-    h1,h2{
-        text-align: center;
-        font-size: 24px;
-    }
-
-    p{
-        font-size: 16px;
-        text-align: left;
-        text-indent: 0;
-        line-height: 1.5;
-    }
-
-    .card a{
-        display: block;
-        margin-bottom: 10px;
-        text-align: center;
-    }
-
-    img{
-        float: none;
-        display: block;
-        width: 100%;
-        margin: 20px 0;
-    }
-
-    header{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    header a{
-        margin: 5px;
-        padding: 8px 12px;
-        font-size: 14px;
-    }
-    
+@media (max-width:520px){
+	header h1{font-size:1.6rem} /* título um pouco menor em telas pequenas */
+	section h2{font-size:1.15rem} /* título secundário menor */
+	.profile-link{max-width:140px} /* reduz a largura máxima dos cartões */
 }
+
+/* respect user preference */
+/* Respeita preferência do usuário por animações reduzidas */
+@media (prefers-reduced-motion: reduce){
+	.profile-link, .profile-link img{transition:none} /* remove transições se preferir menos movimento */
+}
+
+/* minor utility */
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0} /* utilitário para esconder visualmente mas manter acessível */
+    
+
 
 
