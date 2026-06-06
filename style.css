@@ -1,0 +1,139 @@
+.inicio{
+    display:flex;
+    align-items: center;
+    gap: 50px;
+}
+h2{
+    color: purple;  
+}
+
+.card {
+  background-color: #f3e8ff;
+  padding: 15px;
+  border-radius: 10px;
+  width: 320px;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card h3{
+    background-color: #f3e8ff;
+    color: purple;
+    margin-bottom:10px;
+}
+
+.card p{
+    background-color: #f3e8ff;
+    line-height:1.5;
+    color:#333;
+}
+
+.card strong{
+    background-color: #f3e8ff;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.card a{ 
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 12px;
+    background-color: purple;
+    color: white;
+    border-radius: 6px;
+    text-decoration: none;
+}
+
+.card a:hover {
+    background-color: #7a00cc;
+}
+
+
+.projetos{
+    display: flex;
+    gap: 20px;
+}
+
+main{
+    max-width: 1100px;
+    margin: auto;
+}
+
+
+p{
+    margin: 5px 0;
+    text-align: justify;
+    text-indent: 20px;
+}
+img{
+    width: 250px;
+    float: right;
+}
+*{
+    background-color: white;
+    color: black;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding-bottom: 7px;
+}
+
+.titulo{
+    font-size: 17px;
+}
+
+.titulo strong{
+    color: purple;
+}
+
+footer{
+    text-align: center;
+    font-size: 13px;
+    width: 100%;
+    bottom: 0;
+    position: fixed;
+}
+
+header{
+    background-color: purple;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+}
+
+header a{
+    text-decoration: none;
+    color: white;
+    background: none;
+    padding: 0;
+    transition: 0.2s;
+}
+
+header a:hover {
+    color: #d9a7ff;
+    transform: translateY(-2px);
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+}
+
+.redes{
+    display: flex;
+    gap: 10px;
+}
+
+.redes a{
+    background-color: purple;
+    padding: 8px 15px;
+    border-radius: 8px;
+    color: white;
+    text-decoration: none;
+}
+
+.redes a:hover{
+    color: #d9a7ff;
+}
+
+
+
