@@ -60,16 +60,18 @@ main{
     margin: auto;
 }
 
-
 p{
     margin: 5px 0;
     text-align: justify;
     text-indent: 20px;
 }
+
 img{
     width: 250px;
-    float: right;
+    max-width: 100%;
+    height: auto;
 }
+
 *{
     background-color: white;
     color: black;
@@ -90,7 +92,8 @@ footer{
     font-size: 13px;
     width: 100%;
     bottom: 0;
-    position: fixed;
+    position: static;
+    margin-top: 20px;
 }
 
 header{
@@ -134,68 +137,48 @@ header a:hover {
     color: #d9a7ff;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 768px){
 
-    /* ===== MENU ===== */
-    header {
-        display: flex;
+    header{
         flex-wrap: wrap;
-        justify-content: center;
+        gap: 15px;
+        font-size: 18px;
     }
 
-    header a {
-        flex: 1 1 40%;
+    .inicio{
+        flex-direction: column-reverse;
         text-align: center;
-        padding: 10px;
-        margin: 5px;
-        font-size: 14px;
+        gap: 20px;
     }
 
-    /* ===== TEXTO (CORREÇÃO PRINCIPAL) ===== */
-    p {
-        text-align: left !important;
-        text-indent: 0 !important;
-        font-size: 16px;
-        line-height: 1.6;
-        word-spacing: normal;
+    img{
+        width: 180px;
+        max-width: 100%;
+        height: auto;
     }
 
-    .texto {
-        width: 100%;
+    .projetos{
+        flex-direction: column;
+        align-items: center;
     }
 
-    /* ===== IMAGEM ===== */
-    img {
-        display: block;
-        width: 100%;
-        margin-top: 20px;
+    .card{
+        width: 90%;
+        max-width: 350px;
     }
 
-    /* ===== INICIO ===== */
-    .inicio {
-        display: block;
+    .redes{
+        flex-direction: column;
+        align-items: center;
     }
 
-    /* ===== PROJETOS ===== */
-    .projetos {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 10px;
-    }
-
-    .card {
-        width: 48%; /* ✅ menor, lado a lado */
-        padding: 15px;
-    }
-
-    /* ===== BOTÕES ===== */
-    .card a {
-        display: block;
-        font-size: 14px;
-        margin-bottom: 10px;
+    h2{
         text-align: center;
     }
 
+    p{
+        text-indent: 0;
+    }
 }
 
 
