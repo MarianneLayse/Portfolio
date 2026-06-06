@@ -185,6 +185,15 @@ header a:hover {
         font-size: 14px;
     }
 
+    .sobre {
+        display: block;
+    }
+
+    .sobre p {
+        width: 100%;
+        text-align: left;
+        line-height: 1.5;
+    }
 }
 
 
