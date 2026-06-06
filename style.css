@@ -138,52 +138,63 @@ header a:hover {
 
     /* ===== MENU ===== */
     header {
-        text-align: center;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 10px;
     }
 
     header a {
-        display: block;
-        width: 100%;
+        flex: 1 1 40%;
+        text-align: center;
         padding: 10px;
-        margin: 5px 0;
+        margin: 5px;
+        font-size: 14px;
     }
 
-    /* ===== INÍCIO (TEXTO + FOTO) ===== */
-    .inicio {
-        display: flex;
-        flex-direction: column;
+    /* ===== TEXTO (CORREÇÃO PRINCIPAL) ===== */
+    p {
+        text-align: left !important;
+        text-indent: 0 !important;
+        font-size: 16px;
+        line-height: 1.6;
+        width: 100%;
     }
 
     .texto {
         width: 100%;
     }
 
+    /* ===== IMAGEM ===== */
     img {
+        display: block;
         width: 100%;
         margin-top: 20px;
+    }
+
+    /* ===== INICIO ===== */
+    .inicio {
         display: block;
-    }
-
-    /* ===== TEXTOS ===== */
-    p {
-        text-align: left;
-        text-indent: 0;
-        font-size: 16px;
-        line-height: 1.5;
-    }
-
-    h2 {
-        text-align: center;
-        font-size: 22px;
     }
 
     /* ===== PROJETOS ===== */
     .projetos {
-        flex-direction: column;
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
     }
 
     .card {
-        width: 100%;
+        width: 48%; /* ✅ menor, lado a lado */
+        padding: 15px;
+    }
+
+    /* ===== BOTÕES ===== */
+    .card a {
+        display: block;
+        font-size: 14px;
+        margin-bottom: 10px;
+        text-align: center;
     }
 
 }
