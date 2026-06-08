@@ -151,6 +151,7 @@ header a:hover{
     color: #d9a7ff;
 }
 
+/*MODO ESCURO*/
 .dark-mode{
     background-color: #121212;
     color: white;
@@ -175,6 +176,7 @@ header a:hover{
     color: white;
 }
 
+/*MELHORANDO RESPONSIVIDADE PARA CELULAR*/
 @media (max-width: 768px){
 
     header{
