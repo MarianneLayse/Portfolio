@@ -10,6 +10,7 @@ h2{
 
 #tema{
     background-color: transparent;
+    color: purple;
     border: none;
     font-size: 20px;
     cursor: pointer;
@@ -184,6 +185,7 @@ header a:hover{
 
     #tema{
     background-color: transparent;
+    color: purple;
     border: none;
     font-size: 20px;
     cursor: pointer;
@@ -236,29 +238,6 @@ header a:hover{
         text-indent: 0;
     }
 
-    .dark-mode{
-    background-color: #121212;
-    color: white;
-    }
-
-    .dark-mode .card{
-    background-color: #2a2a2a;
-    }
-
-    .dark-mode .card h3,
-    .dark-mode .card p,
-    .dark-mode .card strong{
-    background-color: #2a2a2a;
-    color: white;
-    }
-
-    .dark-mode header{
-    background-color: #5a008f;
-    }
-
-    .dark-mode a{
-    color: white;
-    }
 }
 
 
