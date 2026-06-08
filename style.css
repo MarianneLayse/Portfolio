@@ -182,6 +182,18 @@ header a:hover{
         font-size: 18px;
     }
 
+    #tema{
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    }
+
+    #tema:hover{
+    transform: translateY(-2px);
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+    }
+
     .inicio{
         flex-direction: column-reverse;
         text-align: center;
@@ -222,6 +234,30 @@ header a:hover{
 
     p{
         text-indent: 0;
+    }
+
+    .dark-mode{
+    background-color: #121212;
+    color: white;
+    }
+
+    .dark-mode .card{
+    background-color: #2a2a2a;
+    }
+
+    .dark-mode .card h3,
+    .dark-mode .card p,
+    .dark-mode .card strong{
+    background-color: #2a2a2a;
+    color: white;
+    }
+
+    .dark-mode header{
+    background-color: #5a008f;
+    }
+
+    .dark-mode a{
+    color: white;
     }
 }
 
